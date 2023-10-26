@@ -65,9 +65,11 @@ Lets explain all the keys
 | key | type | default value | description |
 |-----|------|---------------|-------------|
 |interval | int | 50 | Time between notifications |
-| type_interval | str | minutes | Value type for range, accepted values are described in the note below |
+| type_interval* | str | minutes | Value type for range, accepted values are described in the note below |
 | lang | str | PT-BR | Language for presenting messages. See more in the language item |
 | message_duration | int | 10 | Duration of display message |
+| start_at* | str | 09:00 | Time to start notifying |
+| end_at* | str | 18:00 | Time to stop notifying |
 | icon_path | str | ./images/glass-of-watter.ico | Location of message icon |
 | lang_path | str |  ./lang/messages.json | language configuration path |
 
@@ -75,6 +77,9 @@ Lets explain all the keys
 >  * seconds: S, SEC, SECONDS
 >  * minutes: M, MIN, MINUTES,
 >  * hours: H, HOUR, HOURS
+
+> start_at/end_at: If both configurations are missing or set with None value, the script will notify ownes as configured in interval
+> Use time in HH:mm (24h format)
 
 #### Language
 Language file is a json with three keys:

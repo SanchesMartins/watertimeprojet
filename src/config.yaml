@@ -3,6 +3,11 @@ interval: 50  # set time
 type_interval: minutes  # set type of time (available is seconds, minutes, hours)
 lang: PT-BR  # language, check language file in ./lang/messages.json
 message_duration: 10  # time to show message
+start_at: "09:00"  # start hour to notify, we will not notify before that
+end_at: "18:00"  # end hour to notify, we will not notify after that
+
+# If params start_at/end_at not set or missing, the script will owens notify.
+
 
 # other confs
 icon_path: ./images/glass-of-water.ico
