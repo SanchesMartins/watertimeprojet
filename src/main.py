@@ -34,8 +34,8 @@ def main():
     else:
         raise IntervalNotSetError('The interval type set is not valid') 
     
-    notifier.notify()
-    # notifier.keep_notify() 
+    # notifier.notify()
+    notifier.keep_notify() 
     
 
 if __name__ == '__main__':
