@@ -33,7 +33,7 @@ By default, a notification like the image below will be displayed on your Window
 #### Main Configuration
 All settings can be found in the [config.yaml](./src/config.yaml) file
 
-Lets explay all the keys
+Lets explain all the keys
 
 | key | type | default value | description |
 |-----|------|---------------|-------------|
