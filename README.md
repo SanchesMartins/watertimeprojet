@@ -1,16 +1,21 @@
+<p align="center">
+  <img src="./src/images/glass-of-water-fotor-20231025223633.png" width="120" alt="Yep, this is a MS Paint logo" /></a>
+</p>
+
 # Water Time Project
+
 A simple project to remind you to drink water
 
 ### Requirements
 **Python version**: 3.10.6 
 
 **Windows version**: Windows 10 Home Single Language
-> Not tested in other verisions of windows yet
+> Not tested in another verisions of windows yet
 
 **Libs**: _All libs required are in [requirements.txt](./requirements.txt) file, at project root_
 
 ### Usage
-To use this project, use command pythow command to keep it in backgroud
+To use this project, use pythow command to keep it in backgroud
 
 E.G.
 
@@ -28,7 +33,7 @@ By default, a notification like the image below will be displayed on your Window
 #### Main Configuration
 All settings can be found in the [config.yaml](./src/config.yaml) file
 
-Lets explay all the keys
+Lets explain all the keys
 
 | key | type | default value | description |
 |-----|------|---------------|-------------|
@@ -104,6 +109,6 @@ Just create a powershell script or use the [run.cmd](run.cmd) and add this to Wi
 
 ### Change logs
 
-V 1.0 - Create project
+V 0.0.1 - Create project
 
 
