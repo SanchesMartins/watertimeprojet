@@ -15,7 +15,7 @@ A simple project to remind you to drink water
 **Libs**: _All libs required are in [requirements.txt](./requirements.txt) file, at project root_
 
 ### Usage
-To use this project, use command pythow command to keep it in backgroud
+To use this project, use pythow command to keep it in backgroud
 
 E.G.
 
