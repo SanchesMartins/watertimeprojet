@@ -30,6 +30,33 @@ By default, a notification like the image below will be displayed on your Window
 
 ### Configuration
 
+#### First run
+Before run for the first time, goto file [run.cmd](./run.cmd) and change watertimehome variable in section setauto to the absolute path where the code is save
+
+```shell
+@echo off
+
+if NOT [%1] == [] goto setvar
+if [%1] == [] goto setauto
+
+:setvar
+set watertimehome=%1
+goto run
+
+:setauto:
+set watertimehome=./src  # <-- here E.G: C:\users\foo\bar\watertimeproject\src\
+goto run
+
+:run
+echo %watertimehome%
+cd %watertimehome%
+pythonw main.py >> ./logs/logs
+
+
+```
+
+> Note: You can pass the location as parameter to script, just run `run.cmd C:\users\foo\bar\watertimeproject\src`
+
 #### Main Configuration
 All settings can be found in the [config.yaml](./src/config.yaml) file
 
