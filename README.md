@@ -10,7 +10,7 @@ A simple project to remind you to drink water
 **Python version**: 3.10.6 
 
 **Windows version**: Windows 10 Home Single Language
-> Not tested in other verisions of windows yet
+> Not tested in another verisions of windows yet
 
 **Libs**: _All libs required are in [requirements.txt](./requirements.txt) file, at project root_
 
