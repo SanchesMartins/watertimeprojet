@@ -54,7 +54,7 @@ Language file is a json with three keys:
 | message | str | Message to show |
 
 ##### Creating a new language
-In [json file](.src/lang/messages.json) create a new key using the definition above, like this
+In [json file](./src/lang/messages.json) create a new key using the definition above, like this
 
 ```json
 {
