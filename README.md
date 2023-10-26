@@ -1,7 +1,8 @@
-# Water Time Project
 <p align="center">
   <img src="./src/images/glass-of-water-fotor-20231025223633.png" width="120" alt="Yep, this is a MS Paint logo" /></a>
 </p>
+
+# Water Time Project
 
 A simple project to remind you to drink water
 
