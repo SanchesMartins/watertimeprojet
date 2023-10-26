@@ -4,6 +4,7 @@ from service import LangNotAvailableError
 from service import IntervalInvalidError
 from service import IntervalNotSetError
 from time import sleep
+from datetime import datetime
 
 class WaterTimeNotifier:
     def __init__(self, lang: str, duration=10, icon_path="./images/glass-of-water.ico", lang_file='./lang/messages.json'):
@@ -73,14 +74,35 @@ class WaterTimeNotifier:
             threaded=False
         )
         
-    def keep_notify(self):
+    def keep_notify(self, start_at: str=None, end_at: str=None):
         if not self._interval:
             raise IntervalNotSetError('Please, set an interval')
+        
+        none_check = [x for x in (start_at, end_at) if x is None]
+        
+        if len(none_check) == 1:
+            raise AttributeError('Specify both start_at/end_at or neither')
+        
+        elif len(none_check) == 0:
+            if start_at > end_at:
+                raise AttributeError('start_at is greather than end_at')
+            
+            elif start_at == end_at:
+                raise ArithmeticError('start_at and end_at are equals')
         
         while True:
             try:
                 sleep(self._interval)
+                now = datetime.now().strftime('%H:%M')
+                if not start_at is None and not end_at is None: 
+                    if now <= start_at:
+                        continue
+                    
+                    elif now >= end_at:
+                        continue   
+                
                 self.notify()
+                
             except KeyboardInterrupt:
                 return
         

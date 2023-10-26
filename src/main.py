@@ -34,8 +34,14 @@ def main():
     else:
         raise IntervalNotSetError('The interval type set is not valid') 
     
+    start_at = config.get('start_at', None)
+    start_at = None if start_at == "" else start_at
+    
+    end_at = config.get('end_at', None)
+    end_at = None if end_at == "" else end_at
+    
     # notifier.notify()
-    notifier.keep_notify() 
+    notifier.keep_notify(start_at, end_at)
     
 
 if __name__ == '__main__':
