@@ -109,6 +109,6 @@ Just create a powershell script or use the [run.cmd](run.cmd) and add this to Wi
 
 ### Change logs
 
-V 1.0 - Create project
+V 0.0.1 - Create project
 
 
