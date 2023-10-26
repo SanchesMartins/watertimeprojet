@@ -1,0 +1,26 @@
+[
+    {
+        "lang": "PT-BR", 
+        "title": "Beba Àgua",
+        "message": "Mais vale uma pedra no caminho do que duas no rim"
+    },
+    
+    {
+        "lang": "EN-US",
+        "title": "Drink watter",
+        "message": "A stone in the road is better than one in the kidney"
+    },
+
+    {
+        "lang": "ES-ES",
+        "title": "Tiempo de Agua",
+        "message": "¿Quieres que tus riñones sigan funcionando, muchacho?"
+    },
+
+    {
+        "lang": "IT-IT",
+        "title": "L'acqua potabile fa bene",
+        "message": "Bevi qualche sorso"
+    }
+
+]

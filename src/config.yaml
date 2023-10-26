@@ -1,0 +1,9 @@
+# main confs
+interval: 50  # set time
+type_interval: minutes  # set type of time (available is seconds, minutes, hours)
+lang: PT-BR  # language, check language file in ./lang/messages.json
+message_duration: 10  # time to show message
+
+# other confs
+icon_path: ./images/glass-of-water.ico
+config_path: ./lang/messages.json
