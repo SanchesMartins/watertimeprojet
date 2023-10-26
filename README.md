@@ -142,5 +142,10 @@ Just create a powershell script or use the [run.cmd](run.cmd) and add this to Wi
 ### Change logs
 
 V 0.0.1 - Create project
+v 0.0.2 - Add time limits
+    * Now, when you run WaterTimeProject, you can set start time for notification and end_time for notification
+    * read-me updated
+
+
 
 
